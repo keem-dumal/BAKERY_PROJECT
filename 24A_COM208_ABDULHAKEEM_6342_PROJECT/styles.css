@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    color: white;
+}
+
+section{
+    background-image: url("PHOTO-2024-04-02-16-45-44.jpg");
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: color; /*read about this*/
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+#active{
+    color: gold;
+}
+.container{
+    padding: 5px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo h1{
+    font-size: 50px;
+    color: gold;
+}
+.intro{
+    font-size: 30px;
+}
+.logo h3{
+    margin-left: -0.5em;
+}
+.logo{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+    color: white;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #eeeae6;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+
+nav ul li a:hover{
+    color: gold;
+    text-decoration: none;
+}
+
+.header-text {
+    position: absolute; /*read about this*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*read about this*/
+    text-align: center;
+    display: flex;
+    flex-direction: column; /*read about this*/
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.header-text h1, a{
+    align-items: center;
+    justify-content: center;
+}
+.header-text img{
+    border-radius: 10px;
+    border: 2px solid white;
+    width: 90%;
+    height: 90%;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ffc107;
+    border-radius: 5px;
+    margin-top: 1em;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #ffca28;
+    transform: scale(1.1);
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*Menu*/
+.image-grid {
+    position: absolute; /*read about this*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*read about this*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 0 auto;
+}
+
+.image-item {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust width and margin as needed */
+    margin: 10px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Add rounded corners to images */
+}
+
+
+
+/*Sign Up*/
+.form-container {
+    background-color: blanchedalmond; /* Yellow background */
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 50%
+}
+
+h2 {
+    text-align: center;
+    color: #333; /* Text color */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"],
+button {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 16px;
+}
+
+button {
+    background-color: #ffa000; /* Darker yellow for button */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffb300; /* Lighter yellow on hover */
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #333; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/*About Us*/
+.about-us{
+    display: block;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+}
+header h1 {
+    color: gold;
+}
+section h2 {
+    color: gold;
+}
+
+
+/*Shop Online*/
+header h1 {
+    margin: 0;
+    color: #543729;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.product {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product h2 {
+    color: #543729;
+}
+
+.product p {
+    font-weight: bold;
+    color: #3d6e3b;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: gold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: black
+}
